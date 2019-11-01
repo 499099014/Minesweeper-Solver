@@ -1,0 +1,49 @@
+name: Ryan Brooks, Cherlie Chen
+id #: 1530605
+course: CMPUT 274 fall 2018
+
+assignment: Final Project: Minesweeper and a solver
+
+All credits were mentioned in the source code.
+
+included files: minesweeper_v7.py
+                README
+                bookkeeping
+                1.png
+                2.png
+                3.png
+                4.png
+                5.png
+                6.png
+                7.png
+                8.png
+                mine.png
+                flag.jpg
+                white,png
+                darkGray.jpg
+                lightGray,jpg
+                green.jpg
+
+Running instructions:
+It is very important that all images and other files are in the same
+directory as the source code or the game/solver will not work.
+To run the game navigate to its stored directory and in the terminal type
+python3 minesweeper_v7.py to run the game where you will be prompted
+to choose a size, mine count, and whether the user or the solver is playing.
+If the user is chosen: left click to open a tile, right click to flag likely mine
+spots and keep left clicking until the whole board is open or a mine is clicked.
+The numbers on the board represent adjacent mines to that particular tile.
+If the solver is chosen: do the same as above except you won't need to flag
+and only click on the green tile as the solver has deemed that tile the safest click.
+
+Notes and assumptions:
+For the game:
+If the mine count chosen is too high then the code
+may get hung up giving you a first click spot as we run an infinite loop until
+the value of the tile clicked is 0
+Also be sure to follow the game's instructions on the size of the board.
+For the Solver:
+Be sure to follow the green tile, but if you accidentally click another tile then
+the original green tile will not disappear instead it will stay where it was and a new
+green tile will be generated.
+Also the solver does not have 100% accuracy so don't expect to win every game played using it.
